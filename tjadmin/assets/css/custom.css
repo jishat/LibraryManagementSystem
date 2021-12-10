@@ -1,0 +1,670 @@
+:root {
+    --brand-color: #007bff;
+    --brand-color-two: #0776ec;
+    --brand-color-hover: #1ba2af;
+
+    --text-color-gray: #999999;
+
+    --brand-font-head: 'Nunito', sans-serif;
+    --brand-font-description: 'Open Sans', sans-serif;
+}
+body {
+  font-family: var(--brand-font-head);
+}
+h1, h2, h3, h4, h5, h6, a{
+    font-family: var(--brand-font-head);
+}
+p, label, span, li{
+    font-family: var(--brand-font-description);
+}
+.brand-text-color{
+  color: var(--brand-color);
+}
+.brand-background-color{
+  background: var(--brand-color);
+  color: #fff;
+}
+
+/* Loader style Start */
+.overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  cursor: pointer;
+}
+
+.loader {
+  position: relative;
+  display: block;
+  height: 100vh; width: 100%;
+  min-height: 250px;
+  float: left;
+  z-index: 100;
+  background-color: rgb(240,240,241);
+  overflow: hidden;
+}
+
+.loader-41 .loader-container {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px; height: 200px;
+  border: 5px solid rgb(235,235,236);
+  border-radius: 50%;
+}
+.loader-41 .loader-container::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px; height: 200px;
+  border-top: 7px solid #007bff;
+  border-radius: 50%;
+  animation: spin41 1.8s infinite ease-in-out;
+}
+.loader-41 p {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #007bff;
+}
+.loader-41 p.loader-title {
+  color: transparent;
+  z-index: 3;
+}
+.loader-41 p.loader-title-double {
+  color: #007bff;
+  z-index: 1;
+  animation: loader41 2.5s 1s infinite ease-out;
+}
+
+@keyframes spin41 {
+  0%   { transform: translate(-50%, -50%) rotate(0deg);}
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes loader41 {
+  0%  { opacity: 1; }
+  25% { opacity: 1; }
+  35% { opacity: 0.6; }
+  38% { opacity: 1; }
+  50% { opacity: 0.5; }
+  60% { opacity: 1; }
+  70% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+/* Loader style End */
+
+/* error message style start */
+.error-msg p{
+    background: #e23e32;
+    padding: 8px 13px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 16px;
+    word-spacing: 2px;
+    font-weight: 500;
+    box-shadow: 0rem 0.2rem 1rem rgb(226, 62, 50);
+}
+.errmsgParant {
+    margin-bottom: 20px;
+}
+.errmsgParant>p{
+    box-shadow: none;
+}
+.errmsgTw {
+    position: absolute;
+    top: 70px;
+    z-index: 999;
+    /*width: 100%;*/
+    /*position: relative;*/
+}
+
+.error-msg p::before {
+    position: absolute;
+    content: "";
+    border-left: 11px solid transparent;
+    border-bottom: 12px solid #e23e32;
+    border-right: 11px solid transparent;
+    top: -11px;
+    left: 13px;
+}
+/* error message style end */
+
+/*---------------------------------------------------------------------------
+ Login Page css Start
+ ---------------------------------------------------------------------------*/
+.login-logo {
+    text-align: left;
+}
+.login-logo a {
+    display: block;
+}
+
+.login-logo img {
+    margin: 0 auto;
+    width: 90px;
+}
+.login-heading{
+  margin: 30px 0 10px 0;
+  color: #fff;
+  font-weight: 700;
+}
+.login-description{
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+.logn-main-section{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+.login-section {
+    width: 100%;
+    background: var(--brand-color);
+    padding: 90px 5% 0 5%;
+    height: 100vh;
+}
+.login-box {
+    margin: 0 auto;
+}
+.login-img-section{
+  width: 100%;
+  background: var(--brand-color-two);
+  padding: 9% 5% 0 5%;
+  height: 100vh;
+}
+.login-img-section img{
+  max-width: 450px;
+  display: block;
+  margin: 0 auto;
+}
+.btn-tj{
+  background: #fff;
+  color: var(--brand-color);
+  font-weight: 600;
+  font-size: 15px;
+}
+.remember-input label{
+  color: #fff;
+}
+.forgot-pass{
+  color: #fff;
+}
+/*---------------------------------------------------------------------------
+ Login Page css End
+ ---------------------------------------------------------------------------*/
+
+
+ /*---------------------------------------------------------------------------
+  Dashboard Page css Start
+  ---------------------------------------------------------------------------*/
+.navbar-nav .nav-link i {
+ font-size: 18px;
+}
+.top-right-side-nav i{
+  padding-top: 8px;
+}
+.top-right-side-nav{
+  padding-left: 5px!important;
+}
+.top-right-profile-nav{
+  padding-left: 5px!important;
+  padding-right: 0!important;
+}
+.navbar-badge {
+    right: 5px;
+    top: 8px;
+}
+.sub-drop-menu{
+  margin-left: 29px !important;
+}
+ .tj-table thead{
+   background: var(--brand-color);
+   color: #fff;
+ }
+ .content-header h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--brand-color);
+}
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+  background-color: var(--brand-color);
+  color: #fff;
+}
+.breadcrumb-item {
+  font-weight: 600;
+  font-size: 15px;
+}
+.layout-footer-fixed .wrapper .main-footer {
+  position: unset;
+}
+.tj-card {
+  box-shadow: 0 1px 6px 1px rgba(69,65,78,0.1);
+}
+/* .card-title {
+  color: #3a3952;
+  font-weight: 600;
+} */
+.content-wrapper > .content {
+  padding: 0 30px;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 0;
+}
+.btn{
+  cursor: pointer;
+}
+.toggle-on.btn-sm {
+    padding-right: 17px;
+}
+.toggle-off.btn-sm {
+    padding-left: 11px;
+}
+ /*---------------------------------------------------------------------------
+  Dashboard Page css End
+  ---------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------
+ Common css Start
+ ---------------------------------------------------------------------------*/
+ .ImgEdit{
+   position: relative;
+ }
+.ImgEdit img{
+  height: 200px;
+  width: 200px;
+  border: 3px solid var(--brand-color);
+  position: relative;
+  object-fit: cover;
+}
+.ImgEdit #uploadimg{
+  position: absolute;
+  bottom: -17px;
+  left: 55px;
+  cursor: pointer;
+}
+.ImgEdit #uploadimg i{
+  background: #25cc2a;
+  padding: 11px;
+  color: #fff;
+  border-radius: 50%;
+}
+.ImgEdit #deleteimg{
+  position: absolute;
+  bottom: -17px;
+  left: 105px;
+  cursor: pointer;
+}
+.ImgEdit #deleteimg i{
+  background: #ff1616;
+  padding: 11px;
+  color: #fff;
+  border-radius: 50%;
+}
+.ImgInput{
+  display: none;
+}
+
+.lds-ellipsis {
+  position: relative;
+  width: 80px;
+  height: 13px;
+  margin:0 auto;
+}
+.lds-ellipsis div {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #2e3192;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+.tj-unlink-btn{
+  display: flex;
+  flex-wrap: wrap;
+}
+.tj-unlink-btn span{
+  font-size: 14px;
+  background: #dee2e6;
+  padding: 5px 10px;
+  color: #000;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+
+/*---------------------------------------------------------------------------
+Common css End
+ ---------------------------------------------------------------------------*/
+/* ==========================================================================
+404 css start
+========================================================================== */
+
+ .notfound {
+   max-width: 520px;
+   width: 100%;
+   text-align: center;
+   line-height: 1.4;
+   margin: 100px auto;
+ }
+
+ .notfound .notfound-404 {
+   height: 190px;
+ }
+
+ .notfound .notfound-404 h1 {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 146px;
+   font-weight: 700;
+   margin: 0px;
+   color: #232323;
+ }
+
+ .notfound .notfound-404 h1>span {
+   display: inline-block;
+   width: 120px;
+   height: 120px;
+   background-image: url('../img/emoji.png');
+   background-size: cover;
+   -webkit-transform: scale(1.4);
+       -ms-transform: scale(1.4);
+           transform: scale(1.4);
+   z-index: -1;
+ }
+
+ .notfound h2 {
+   font-size: 22px;
+   font-weight: 800;
+   margin: 0;
+   text-transform: uppercase;
+   color: #232323;
+  margin-bottom: 10px;
+ }
+
+ .notfound p {
+   color: #787878;
+   font-weight: 500;
+ }
+
+ .notfound a {
+   display: inline-block;
+   padding: 12px 30px;
+   font-weight: 800;
+   background-color: var(--brand-color);
+   color: #fff;
+   border-radius: 40px;
+   text-decoration: none;
+   -webkit-transition: 0.2s all;
+   transition: 0.2s all;
+ }
+
+ .notfound a:hover {
+   opacity: 0.8;
+ }
+
+ @media only screen and (max-width: 767px) {
+   .notfound .notfound-404 {
+     height: 115px;
+   }
+   .notfound .notfound-404 h1 {
+     font-size: 86px;
+   }
+   .notfound .notfound-404 h1>span {
+     width: 86px;
+     height: 86px;
+   }
+ }
+ /* ==========================================================================
+  404 css
+  ========================================================================== */
+
+ /* ==========================================================================
+  Overide Css
+  ========================================================================== */
+  .main-header{
+    padding: .6rem 2rem
+  }
+  .sidebar-toggle-btn i {
+      font-size: 20px;
+      color: #000;
+  }
+  .tj-card-header {
+    padding: 1.5rem;
+  }
+
+  .widget-user-body i{
+    font-size: 16px;
+    color: #464646;
+    margin-right: 12px;
+  }
+  .borrow-table td{
+    vertical-align: middle;
+    font-size: 14px;
+  }
+  .borrow-table th{
+    font-size: 14px;
+  }
+  .tj_progress{
+    position: relative;
+  }
+  .tj_progress span{
+    position: absolute;
+    top: -9%;
+    left: 0;
+    color: #000;
+    font-weight: 600;
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+  }
+  .dropdown-menu-tj{
+    will-change: transform;
+    transform: translate3d(-45%, 27px, 0px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+        padding-right: 0px;
+        padding-left: 0px;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.175);
+    display: none;
+  }
+  /* .renewBtn{
+    position: relative;
+  } */
+  .dropdown-main{
+    position: relative;
+  }
+
+  .searchDropdownMain{
+    position: relative;
+  }
+  .searchDropdownMain .searchDropdownInput{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  .searchDropdownMain .searchDropDown{
+    display: none;
+    position: absolute;
+    width: 97%;
+    background: white;
+    top: 73px;
+    z-index: 99;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.175);
+    padding-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+
+
+  /* .custom-switch .custom-control-label::before {
+      left: -2.25rem;
+      width: 3rem;
+      pointer-events: all;
+      border-radius: 1rem;
+  }
+  .custom-control-label::before {
+    position: absolute;
+    top: .25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1.5rem;
+    pointer-events: none;
+    content: "";
+    background-color: #dee2e6;
+    border: #adb5bd solid 1px;
+    box-shadow: inset 0 0.25rem 0.25rem rgba(0,0,0,.1);
+}
+
+.custom-switch .custom-control-label::after {
+    top: calc(.25rem + 2px);
+    left: calc(-2.25rem + 2px);
+    width: calc(1.5rem - 4px);
+    height: calc(1.5rem - 4px);
+    background-color: #adb5bd;
+    border-radius: 1rem;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-transform .15s ease-in-out;
+    transition: transform .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: transform .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-transform .15s ease-in-out;
+}
+.custom-switch .custom-control-input:checked~.custom-control-label::after {
+    background-color: #dee2e6;
+    -webkit-transform: translateX(1.5rem);
+    transform: translateX(1.5rem);
+} */
+
+
+/* ==========================================================================
+ resposive css
+ ========================================================================== */
+
+@media only screen and (max-width: 575px){
+
+  /*---------------------------------------------------------------------------
+   Login Page resposive css Start
+   ---------------------------------------------------------------------------*/
+    .logn-main-section {
+        display: block;
+      }
+    .login-img-section {
+        display: none;
+    }
+    .login-section {
+        padding: 30px 5% 0 5%;
+    }
+    .login-logo {
+        text-align: center;
+    }
+  /*---------------------------------------------------------------------------
+   Login Page resposive css End
+   ---------------------------------------------------------------------------*/
+}
+
+
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  /*---------------------------------------------------------------------------
+   Login Page resposive css Start
+   ---------------------------------------------------------------------------*/
+    .logn-main-section {
+        display: block;
+      }
+    .login-img-section {
+        display: none;
+    }
+    .login-section {
+        padding: 30px 5% 0 5%;
+    }
+    .login-logo {
+        text-align: center;
+    }
+  /*---------------------------------------------------------------------------
+   Login Page resposive css End
+   ---------------------------------------------------------------------------*/
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+
+
+@media screen and (max-width: 1200px){
+
+}

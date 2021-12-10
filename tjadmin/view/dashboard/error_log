@@ -1,0 +1,6 @@
+[09-Dec-2021 20:31:21 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/dashboard/index.php on line 2
+[09-Dec-2021 20:31:21 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/dashboard/index.php on line 2
+[09-Dec-2021 20:31:21 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Student\Student' not found in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/dashboard/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/dashboard/index.php on line 8

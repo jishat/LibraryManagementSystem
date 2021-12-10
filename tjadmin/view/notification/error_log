@@ -1,0 +1,48 @@
+[10-Dec-2021 10:10:56 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:10:56 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:10:56 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Notification\Notification' not found in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 3
+[10-Dec-2021 10:11:48 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:11:48 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:11:48 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Notification\Notification' not found in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 3
+[10-Dec-2021 10:11:58 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:11:58 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:11:58 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Notification\Notification' not found in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 3
+[10-Dec-2021 10:13:06 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:13:06 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:13:06 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Notification\Notification' not found in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 3
+[10-Dec-2021 10:14:45 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:14:45 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:14:45 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Notification\Notification' not found in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 3
+[10-Dec-2021 10:14:52 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:14:52 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:14:52 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Notification\Notification' not found in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 3
+[10-Dec-2021 10:15:15 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:15:15 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:15:15 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Notification\Notification' not found in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 3
+[10-Dec-2021 10:56:06 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:56:06 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 1
+[10-Dec-2021 10:56:06 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Notification\Notification' not found in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/notification/index.php on line 3

@@ -1,0 +1,12 @@
+[10-Dec-2021 09:35:19 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/book/create.php on line 2
+[10-Dec-2021 09:35:19 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/book/create.php on line 2
+[10-Dec-2021 09:35:19 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Category\Category' not found in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/book/create.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/book/create.php on line 5
+[10-Dec-2021 17:30:21 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '2021:12:10, 17:30:21' for column `jishatco_lms`.`tj_books`.`update_at` at row 1 in /home/jishatco/librarymanagement.jishat.com/app/Book/Book.php:409
+Stack trace:
+#0 /home/jishatco/librarymanagement.jishat.com/app/Book/Book.php(409): PDOStatement->execute()
+#1 /home/jishatco/librarymanagement.jishat.com/tjadmin/view/book/update.php(10): App\Book\Book->updateBook(Array, Array)
+#2 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/app/Book/Book.php on line 409

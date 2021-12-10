@@ -1,0 +1,1389 @@
+/*Font use from google*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+/* ==========================================================================
+Start: Default Css
+========================================================================== */
+  /*Variable Declare*/
+  :root{
+    --brand-color: #007bff;
+    --brand-color-two: #0776ec;
+    --brand-color-hover: #1ba2af;
+
+    --text-color-gray: #999999;
+    --text-color-black:  #3e3e3e;
+
+    --brand-font-head: 'Nunito', sans-serif;
+    --brand-font-description: 'Open Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--brand-font-head);
+  }
+  h1, h2, h3, h4, h5, h6, a{
+      font-family: var(--brand-font-head);
+  }
+  p, label, span, li{
+      font-family: var(--brand-font-description);
+  }
+  .brand-text-color{
+    color: var(--brand-color);
+  }
+  .brand-background-color{
+    background: var(--brand-color);
+    color: #fff;
+  }
+  .bg-light-gray{
+    background: #dee2e6;
+    color: #000;
+  }
+
+/* ==========================================================================
+End: Default Css
+========================================================================== */
+
+/* ==========================================================================
+Start: Helper Css
+========================================================================== */
+  /* Loader style Start */
+  .overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999999;
+    cursor: pointer;
+  }
+
+  .loader {
+    position: relative;
+    display: block;
+    height: 100vh; width: 100%;
+    min-height: 250px;
+    float: left;
+    z-index: 100;
+    background-color: rgb(240,240,241);
+    overflow: hidden;
+  }
+
+  .loader-41 .loader-container {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; height: 200px;
+    border: 5px solid rgb(235,235,236);
+    border-radius: 50%;
+  }
+  .loader-41 .loader-container::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; height: 200px;
+    border-top: 7px solid #007bff;
+    border-radius: 50%;
+    animation: spin41 1.8s infinite ease-in-out;
+  }
+  .loader-41 p {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #007bff;
+  }
+  .loader-41 p.loader-title {
+    color: transparent;
+    z-index: 3;
+  }
+  .loader-41 p.loader-title-double {
+    color: #007bff;
+    z-index: 1;
+    animation: loader41 2.5s 1s infinite ease-out;
+  }
+
+  @keyframes spin41 {
+    0%   { transform: translate(-50%, -50%) rotate(0deg);}
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  @keyframes loader41 {
+    0%  { opacity: 1; }
+    25% { opacity: 1; }
+    35% { opacity: 0.6; }
+    38% { opacity: 1; }
+    50% { opacity: 0.5; }
+    60% { opacity: 1; }
+    70% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+  /* Loader style End */
+
+
+  /* error message style start */
+  .error-msg p{
+      background: #e23e32;
+      padding: 8px 13px;
+      border-radius: 6px;
+      color: #ffffff;
+      font-size: 16px;
+      word-spacing: 2px;
+      font-weight: 500;
+      box-shadow: 0rem 0.2rem 1rem rgb(226, 62, 50);
+  }
+  .errmsgParant {
+      margin-bottom: 20px;
+  }
+  .errmsgParant>p{
+      box-shadow: none;
+  }
+  .errmsgTw {
+      position: absolute;
+      top: 70px;
+      z-index: 999;
+      /*width: 100%;*/
+      /*position: relative;*/
+  }
+
+  .error-msg p::before {
+      position: absolute;
+      content: "";
+      border-left: 11px solid transparent;
+      border-bottom: 12px solid #e23e32;
+      border-right: 11px solid transparent;
+      top: -11px;
+      left: 13px;
+  }
+  /* error message style end */
+
+  /* centered columns styles */
+  .row-centered {
+      text-align:center;
+  }
+  .col-centered {
+      display:inline-block;
+      float:none;
+      /* reset the text-align */
+      text-align:left;
+      /* inline-block space fix */
+      margin-right:-4px;
+      text-align: center;
+  }
+/* ==========================================================================
+End: Helper Css
+========================================================================== */
+
+
+/* ==========================================================================
+Start: Student Login Page css
+========================================================================== */
+   .login-logo a {
+       display: block;
+   }
+
+   .login-logo img {
+       margin: 0 auto;
+       width: 90px;
+   }
+   .login-heading{
+     margin: 30px 0 10px 0;
+     color: #fff;
+     font-weight: 700;
+   }
+   .login-description{
+     color: #fff;
+     margin-bottom: 40px;
+     font-size: 15px;
+   }
+   .logn-main-section{
+       height: 100%;
+       display: flex;
+       width: 100%;
+       align-items: stretch;
+   }
+   .login-section {
+       width: 100%;
+       background: var(--brand-color);
+       padding: 90px 5% 0 5%;
+       height: 100vh;
+   }
+   .login-box {
+       margin: 0 auto;
+   }
+   .login-img-section{
+     width: 100%;
+     background: var(--brand-color-two);
+     padding: 0 5% 0 5%;
+     height: 100vh;
+     /* Internet Explorer 10 */
+      display:-ms-flexbox;
+      -ms-flex-pack:center;
+      -ms-flex-align:center;
+
+      /* Firefox */
+      display:-moz-box;
+      -moz-box-pack:center;
+      -moz-box-align:center;
+
+      /* Safari, Opera, and Chrome */
+      display:-webkit-box;
+      -webkit-box-pack:center;
+      -webkit-box-align:center;
+
+      /* W3C */
+      display:box;
+      box-pack:center;
+      box-align:center;
+   }
+   .login-img-section img{
+     display: block;
+     margin: 0 auto;
+     width: 100%;
+     height: auto;
+   }
+   .btn-tj{
+     background: #fff;
+     color: var(--brand-color);
+     font-weight: 600;
+     font-size: 15px;
+   }
+   .remember-input label{
+     color: #fff;
+   }
+   .forgot-pass{
+     color: #fff;
+   }
+/* ==========================================================================
+ End: Student Login Page css
+ ========================================================================== */
+
+/* ==========================================================================
+Start: Student Register Page css
+========================================================================== */
+  .student-register-sect{
+    background: #f5f5f5;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+  }
+  .register-section {
+    width: 100%;
+    padding: 50px 5% 0 5%;
+  }
+  .reg-img-section {
+    width: 350px;
+    background: var(--brand-color-two);
+    padding: 35px 20px;
+  }
+  .reg-img-section img{
+    width: 100%;
+    height: auto;
+  }
+  .reg-form-head{
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 15px;
+  }
+  .reg-form-head h2{
+    font-size: 20px;
+  }
+/* ==========================================================================
+End: Student Register Page css
+========================================================================== */
+
+/* ==========================================================================
+Start: Menu & Slider css
+========================================================================== */
+  /*---------------------------------------------------------------------------
+   menu css start
+   ---------------------------------------------------------------------------*/
+  .top-menu .navbar .nav-link {
+    font-size: 22px;
+  }
+  .main-active{
+    color: var(--brand-color)!important;
+  }
+  .top-menu{
+    z-index: 15;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    transition: .5s all ease;
+    -ms-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+  }
+  .top-menu .navbar{
+    padding: 30px 0;
+    transition: .4s all ease;
+    -moz-transition: .4s all ease;
+    -webkit-transition: .4s all ease;
+    -o-transition: .4s all ease;
+    -ms-transition: .4s all ease;
+  }
+  .top-menu .navbar-brand{
+    font-weight: 600;
+  }
+  .darkMenu .navbar-nav .nav-link {
+    color: #fff;
+  }
+  .darkMenu .navbar-nav .nav-link:hover {
+    color: var(--brand-color);
+  }
+  .darkMenu .navbar-brand {
+    color: #fff;
+  }
+  .scrollMenu .navbar{
+    padding: 12px 0;
+  }
+  /*---------------------------------------------------------------------------
+   menu css end
+   ---------------------------------------------------------------------------*/
+
+  /*---------------------------------------------------------------------------
+  Slider css start
+  ---------------------------------------------------------------------------*/
+  #slider-section{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 150px 0 65px 0;
+  }
+  #slider-section::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(13, 14, 35, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .slide-content{
+    position: relative;
+    z-index: 10;
+    align-items: center;
+  }
+  .slide-content .content-one h2{
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .slide-content .content-one h2::after {
+    content: "";
+    position: absolute;
+    width: 44px;
+    height: 4px;
+    background: var(--brand-color);
+    bottom: -14px;
+    left: 0;
+  }
+  .slide-content .content-one a{
+    color: #1a1b56;
+    font-weight: 700;
+    font-size: 14px;
+    background: #ffffff;
+    padding: 7px 10px;
+    border-radius: 5px;
+  }
+  .slide-content .content-one a:hover{
+    color:#ffffff;
+    background-color: #f1b020;
+  }
+  .slide-content .content-two{
+    margin-left: auto;
+  }
+  .slide-content .content-two img{
+    max-width: 500px;
+    height: auto;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border-radius: 20px;
+  }
+
+  .graph-img{
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+  }
+  .graph-img img{
+    width: 100%;
+    height: auto;
+  }
+  .avatar-img img{
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      padding: 5px;
+      border: 2px solid var(--brand-color);
+  }
+  .profile-content h2{
+    color: var(--brand-color);
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .profile-content table tbody tr{}
+  .profile-content table tbody tr td{
+      color: var(--text-color-gray);
+      font-weight: 700;
+      min-width: 66px;
+      padding: 1px 0;
+  }
+  .profile-content table tbody tr td:last-child{
+    color: var(--text-color-black);
+    font-weight: 700;
+  }
+  /*---------------------------------------------------------------------------
+  Slider css End
+  ---------------------------------------------------------------------------*/
+/* ==========================================================================
+End: Menu & Slider css
+========================================================================== */
+
+/* ==========================================================================
+Start: Book Page css
+========================================================================== */
+  /*---------------------------------------------------------------------------
+  Search Css Start
+  ---------------------------------------------------------------------------*/
+  #search-section{
+    background: #ffffff;
+    padding: 60px 0;
+  }
+  .search-portion{}
+  .search-portion form{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: 1px solid #d6d6d6;
+      padding: 10px 20px;
+      margin: 0 60px;
+      border-radius: 50px;
+      background: #f5f5f5;
+  }
+  .search-portion form .all-input{
+      border-right: 1px solid #d8d8d8;
+      margin-right: 73px;
+  }
+  .search-portion input[type='text']{
+      height: 35px;
+      border: none;
+      width: 250px;
+      background: #f5f5f5;
+      padding-right: 20px;
+  }
+  .search-portion input[type='text']::placeholder{
+      font-size: 16px;
+      color:#989898;
+  }
+  .search-portion input[type='text']:focus{
+      border: none;
+      outline:none;
+  }
+  .search-portion select{
+      height: 35px;
+      color: #989898;
+      border: none;
+      font-size: 16px;
+      width: 270px;
+      margin-right: 19px;
+      background: #f5f5f5;
+  }
+  .search-portion select:focus{
+      border: none;
+      outline:none;
+  }
+  .all-input button{
+      background: #2e3192;
+      border: none;
+      padding: 10px 23px;
+      color: #ffffff;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+  }
+  .search-portion form .all-input:last-child{
+    border: none;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  /*---------------------------------------------------------------------------
+  Search Css End
+  ---------------------------------------------------------------------------*/
+
+  /*---------------------------------------------------------------------------
+  Books section Css Start
+  ---------------------------------------------------------------------------*/
+  #books-section{
+    background: #ffffff;
+    padding-bottom: 60px;
+  }
+  .eachBook{
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #ececec;
+    padding: 15px 0;
+  }
+  .eachBookOverlay {
+    position: absolute;
+    content: "";
+    background: rgb(0, 123, 255, .8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eachBook h2{
+      font-size: 17px;
+      font-weight: 600;
+      color:#000000;
+      text-align: center;
+      margin: 5px 0;
+  }
+  .book-container {
+    width: 200px;
+    height: 300px;
+    margin: 30px 30px 45px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 400px;
+  }
+
+  .book {
+    transform: rotateY(-30deg);
+    position: relative;
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 300px;
+    transition: transform 1s ease;
+    animation: 1s ease 0s 1 initAnimation;
+  }
+
+  .book:hover {
+    transform: rotate(0deg);
+  }
+
+  @keyframes initAnimation {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(-30deg);
+    }
+  }
+
+  .book > :first-child {
+    /* position: absolute; */
+    background: #0d47a1aa;
+    width: 200px;
+    height: 300px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 5px 5px 20px #898989;
+  }
+
+  .book::before {
+    content: ' ';
+    background: #fff;
+    height: calc(300px - 2 * 3px);
+    width: 50px;
+    top: 3px;
+    position: absolute;
+    transform: translateX(calc(200px - 50px / 2 - 3px)) rotateY(90deg) translateX(calc(50px / 2))
+  }
+
+  .after-img{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    transform: translateZ(-50px);
+    box-shadow: -10px 0 50px 10px #bfbfbf;
+  }
+
+
+  .book-img {
+    border: 2px solid #f1b020;
+    padding: 22px;
+  }
+  .book-description-content h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color-black);
+    margin-bottom: 0px;
+  }
+  .book-description-content table{
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  .book-description-content table tbody tr{
+      margin-bottom: 5px;
+      display: block;
+  }
+  .book-description-content table tbody tr td{
+    min-width: 100px;
+    font-size: 14px;
+  }
+  .book-description-content .book-table-one tbody tr td:last-child{
+    color: var(--brand-color);
+    font-weight: 700;
+  }
+  .book-description-content .book-table-two tbody tr td:last-child{
+    color: var(--brand-color);
+    font-weight: 700;
+  }
+  .borrow-btn{
+    width: 100px;
+    height: 40px;
+    background: #f1b020;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 40px;
+  }
+  .borrow-btn button, .borrow-btn a{
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    z-index: 2;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 11px 25px;
+  }
+  .borrow-btn a{
+    top:8px;
+  }
+  #about-book-sect{
+    background: #f7f7f7;
+  }
+  .about-book{}
+  .about-book ul{
+    display: flex;
+    flex-direction: row;
+    background: #e4e4e4;
+    padding: 10px 0;
+  }
+  .about-book ul li{}
+  .about-book ul li a{
+    padding: 10px 20px;
+    color: #000000;
+    font-size: 17px;
+  }
+  #aboutBookTabs div{
+    border: 1px solid #e4e4e4;
+    padding: 30px 20px;
+  }
+
+
+
+  /*---------------------------------------------------------------------------
+  Books section Css End
+  ---------------------------------------------------------------------------*/
+
+/* ==========================================================================
+End: Book Page css
+========================================================================== */
+
+/* ==========================================================================
+Start: Borrow Page css
+========================================================================== */
+
+  /*---------------------------------------------------------------------------
+  Borrow section Css Start
+  ---------------------------------------------------------------------------*/
+  #borrow-section{
+    padding: 80px 0;
+  }
+
+  .tj_progress{
+    position: relative;
+  }
+  .tj_progress span{
+    position: absolute;
+    top: -9%;
+    left: 0;
+    color: #000;
+    font-weight: 600;
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+  }
+  .dropdown-menu-tj{
+    will-change: transform;
+    transform: translate3d(-45%, 27px, 0px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+        padding-right: 0px;
+        padding-left: 0px;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.175);
+    display: none;
+  }
+  /* .renewBtn{
+    position: relative;
+  } */
+  .dropdown-main{
+    position: relative;
+  }
+  /*---------------------------------------------------------------------------
+  Borrow section Css End
+  ---------------------------------------------------------------------------*/
+
+/* ==========================================================================
+End: Borrow Page css
+========================================================================== */
+
+/* ==========================================================================
+
+Start: Notification Page css
+========================================================================== */
+
+  #notification-section{
+    background: #ffffff;
+    padding: 60px;
+    margin-top: 50px;
+  }
+
+/* ==========================================================================
+End: Notification Page css
+========================================================================== */
+
+/* ==========================================================================
+Start: Profile Page css
+========================================================================== */
+  .ImgEdit{
+    position: relative;
+  }
+  .ImgEdit img{
+   height: 200px;
+   width: 200px;
+   border: 3px solid var(--brand-color);
+   position: relative;
+   object-fit: cover;
+  }
+  .ImgEdit #uploadimg{
+   position: absolute;
+   bottom: -17px;
+   left: 55px;
+   cursor: pointer;
+  }
+  .ImgEdit #uploadimg i{
+   background: #25cc2a;
+   padding: 11px;
+   color: #fff;
+   border-radius: 50%;
+  }
+  .ImgEdit #deleteimg{
+   position: absolute;
+   bottom: -17px;
+   left: 105px;
+   cursor: pointer;
+  }
+  .ImgEdit #deleteimg i{
+   background: #ff1616;
+   padding: 11px;
+   color: #fff;
+   border-radius: 50%;
+  }
+  .ImgInput{
+   display: none;
+  }
+/* ==========================================================================
+End: Profile Page css
+========================================================================== */
+
+/* ==========================================================================
+Start: Footer Section css
+========================================================================== */
+
+.copyright-text{
+  text-align: center;
+  border-top: 1px solid #c7c7c7;
+  padding: 25px 0;
+  background: #ececec;
+}
+.copyright-text p{
+  color: #888888;
+}
+/* ==========================================================================
+End: Footer Section css
+========================================================================== */
+
+/* ==========================================================================
+404 css start
+========================================================================== */
+
+ .notfound {
+   max-width: 520px;
+   width: 100%;
+   text-align: center;
+   line-height: 1.4;
+   margin: 100px auto;
+ }
+
+ .notfound .notfound-404 {
+   height: 190px;
+ }
+
+ .notfound .notfound-404 h1 {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 146px;
+   font-weight: 700;
+   margin: 0px;
+   color: #232323;
+ }
+
+ .notfound .notfound-404 h1>span {
+   display: inline-block;
+   width: 120px;
+   height: 120px;
+   background-image: url('../img/emoji.png');
+   background-size: cover;
+   -webkit-transform: scale(1.4);
+       -ms-transform: scale(1.4);
+           transform: scale(1.4);
+   z-index: -1;
+ }
+
+ .notfound h2 {
+   font-size: 22px;
+   font-weight: 800;
+   margin: 0;
+   text-transform: uppercase;
+   color: #232323;
+  margin-bottom: 10px;
+ }
+
+ .notfound p {
+   color: #787878;
+   font-weight: 500;
+ }
+
+ .notfound a {
+   display: inline-block;
+   padding: 12px 30px;
+   font-weight: 800;
+   background-color: var(--brand-color);
+   color: #fff;
+   border-radius: 40px;
+   text-decoration: none;
+   -webkit-transition: 0.2s all;
+   transition: 0.2s all;
+ }
+
+ .notfound a:hover {
+   opacity: 0.8;
+ }
+
+ @media only screen and (max-width: 767px) {
+   .notfound .notfound-404 {
+     height: 115px;
+   }
+   .notfound .notfound-404 h1 {
+     font-size: 86px;
+   }
+   .notfound .notfound-404 h1>span {
+     width: 86px;
+     height: 86px;
+   }
+ }
+ /* ==========================================================================
+  404 css
+  ========================================================================== */
+
+
+/*Responsive CSS*/
+@media only screen and (max-width: 575px){
+  #slider-section {
+    padding: 115px 0 65px 0;
+  }
+  .graph-img {
+    bottom: -2px;
+  }
+  .slide-content .content-one h2 {
+    font-size: 28px;
+  }
+
+  /*---------------------------------------------------------------------------
+   End: Search Portion css
+   ---------------------------------------------------------------------------*/
+  #search-section {
+    background: #ffffff;
+    padding: 20px 0;
+  }
+  .search-portion {
+    max-width: 100%;
+  }
+  .search-portion form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: none;
+    padding: 10px 20px;
+     margin: 0;
+    border-radius: 5px;
+     background: none;
+  }
+  .search-portion form .all-input {
+    width: 100%;
+    border-right: none;
+    margin-right: 0;
+    margin-bottom: 12px;
+
+  }
+  .search-portion form .all-input:last-child {
+    border: none;
+    margin-left: unset;
+    margin-right: 0;
+  }
+  .search-portion input[type='text'] {
+    width: 100%;
+    padding-right: 0;
+    padding: 10px;
+    border-radius: 5px;
+    height: 39px;
+  }
+  .search-portion input[type='text']::placeholder{
+    font-size: 14px;
+    color:#989898;
+  }
+  .search-portion select {
+    font-size: 14px;
+    width: 100%;
+    padding-right: 0;
+    padding: 10px;
+    border-radius: 5px;
+    height: 39px;
+    margin: 0;
+  }
+  .all-input button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  /*---------------------------------------------------------------------------
+   Start: Search Portion css
+   ---------------------------------------------------------------------------*/
+
+  /*---------------------------------------------------------------------------
+   Start: Register Page resposive css
+   ---------------------------------------------------------------------------*/
+    .student-register-sect {
+        display: block;
+      }
+    .reg-img-section {
+        display: none;
+    }
+    .register-section{
+        padding: 30px 5% 0 5%;
+    }
+    .reg-form-head h2 {
+        font-size: 16px;
+    }
+    .reg-form-head a {
+        font-size: 14px;
+    }
+  /*---------------------------------------------------------------------------
+   End: Register Page resposive
+   ---------------------------------------------------------------------------*/
+
+  /*---------------------------------------------------------------------------
+  Start: Login Page resposive
+  --------------------------------------------------------------------------*/
+     .logn-main-section{
+         display: block;
+       }
+     .login-img-section {
+         display: none;
+     }
+     .login-section{
+         padding: 30px 5% 0 5%;
+     }
+     .login-logo {
+        text-align: center;
+    }
+    .login-heading {
+      text-align: center;
+    }
+    .login-description {
+      text-align: center;
+    }
+   /*---------------------------------------------------------------------------
+    End: Login Page resposive
+    ---------------------------------------------------------------------------*/
+    /* Start Book collection section */
+    .book-container {
+      width: 100px;
+      height: 180px;
+      margin: 15px 0 30px 20px;
+    }
+
+    .book {
+      width: 100px;
+      height: 180px;
+    }
+
+    .book > :first-child {
+      width: 100px;
+      height: 180px;
+    }
+
+    .book::before {
+      height: calc(180px - 2 * 3px);
+      transform: translateX(calc(100px - 50px / 2 - 3px)) rotateY(90deg) translateX(calc(50px / 2))
+    }
+
+    .after-img{
+      width: 100px;
+      height: 180px;
+    }
+    /* End Book collection section */
+    /* Show book */
+    .book-img {
+      padding: 0px 22px;
+      margin-bottom: 35px;
+    }
+    .book-description-content h2 {
+      font-size: 18px;
+    }
+    /* Show book */
+
+    /* Borrow page */
+    #borrow-section {
+      padding: 0px 0 80px 0;
+    }
+    /* Borrow page */
+
+    /* Notification*/
+    #notification-section {
+      padding: 0px;
+    }
+    .card-body.p-0 .table tbody>tr>td:first-of-type, .card-body.p-0 .table tbody>tr>th:first-of-type, .card-body.p-0 .table thead>tr>td:first-of-type, .card-body.p-0 .table thead>tr>th:first-of-type {
+      padding-left: .5rem;
+    }
+    /* Notification*/
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* Search Portion */
+  .search-portion input[type='text'] {
+    width: 178px;
+  }
+  .search-portion select {
+    width: 170px;
+  }
+  .search-portion form .all-input {
+    margin-right: 20px;
+  }
+  .search-portion form {
+    margin: 0 0;
+  }
+  /* Search Portion */
+  /*---------------------------------------------------------------------------
+   Login Page resposive css Start
+   ---------------------------------------------------------------------------*/
+    .student-register-sect {
+        display: block;
+      }
+    .reg-img-section {
+        display: none;
+    }
+    .register-section{
+        padding: 30px 5% 0 5%;
+    }
+  /*---------------------------------------------------------------------------
+   Login Page resposive css End
+   ---------------------------------------------------------------------------*/
+
+   /*---------------------------------------------------------------------------
+    Login Page resposive css Start
+    ---------------------------------------------------------------------------*/
+     .logn-main-section{
+         display: block;
+       }
+     .login-img-section {
+         display: none;
+     }
+     .login-section{
+         padding: 30px 5% 0 5%;
+     }
+    .login-logo {
+        text-align: center;
+    }
+    .login-heading {
+      text-align: center;
+    }
+    .login-description {
+      text-align: center;
+    }
+   /*---------------------------------------------------------------------------
+    Login Page resposive css End
+    ---------------------------------------------------------------------------*/
+
+    /* Start Book collection section */
+    .book-container {
+      width: 170px;
+      height: 270px;
+      margin: 30px 0 45px 27px;
+    }
+
+    .book {
+      width: 170px;
+      height: 270px;
+    }
+
+    .book > :first-child {
+      width: 170px;
+      height: 270px;
+    }
+
+    .book::before {
+      height: calc(270px - 2 * 3px);
+      transform: translateX(calc(170px - 50px / 2 - 3px)) rotateY(90deg) translateX(calc(50px / 2))
+    }
+
+    .after-img{
+      width: 170px;
+      height: 270px;
+    }
+    /* End Book collection section */
+    /* Show book */
+    .book-img {
+      padding: 0px 22px;
+      margin-bottom: 35px;
+    }
+    .book-description-content h2 {
+      font-size: 18px;
+    }
+    /* Show book */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+  /*Start search Portion */
+  .search-portion input[type='text'] {
+    width: 208px;
+  }
+  .search-portion select {
+    width: 170px;
+  }
+  .search-portion form .all-input {
+    margin-right: 20px;
+  }
+  /*End search Portion */
+
+  /* Start Login logo section */
+  .login-logo, .register-logo {
+      text-align: left;
+  }
+  /*End Login logo section */
+  /* Start Book collection section */
+  .book-container {
+    width: 170px;
+    height: 270px;
+    margin: 30px 30px 45px 12px;
+  }
+
+  .book {
+    width: 170px;
+    height: 270px;
+  }
+
+  .book > :first-child {
+    width: 170px;
+    height: 270px;
+  }
+
+  .book::before {
+    height: calc(270px - 2 * 3px);
+    transform: translateX(calc(170px - 50px / 2 - 3px)) rotateY(90deg) translateX(calc(50px / 2))
+  }
+
+  .after-img{
+    width: 170px;
+    height: 270px;
+  }
+  /* End Book collection section */
+
+  /* Show book */
+  .book-img {
+    padding: 0px 0px;
+  }
+  .book-description-content h2 {
+    font-size: 18px;
+  }
+  #category span{
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  .modal-dialog {
+    max-width: 600px;
+  }
+  /* Show book */
+}
+
+@media (min-width: 992px) {
+  /* Start Login logo section */
+  .login-logo, .register-logo {
+      text-align: left;
+  }
+  /*End Login logo section */
+
+  /*Start search Portion */
+  .search-portion input[type='text'] {
+    width: 208px;
+  }
+  .search-portion select {
+    width: 170px;
+  }
+  .search-portion form {
+    margin: 0 60px;
+  }
+  .search-portion form .all-input {
+    margin-right: 73px;
+  }
+  /*End search Portion */
+
+  /* Start Book collection section */
+  .book-container {
+    width: 170px;
+    height: 270px;
+    margin: 30px 30px 45px 12px;
+  }
+
+  .book {
+    width: 170px;
+    height: 270px;
+  }
+
+  .book > :first-child {
+    width: 170px;
+    height: 270px;
+  }
+
+  .book::before {
+    height: calc(270px - 2 * 3px);
+    transform: translateX(calc(170px - 50px / 2 - 3px)) rotateY(90deg) translateX(calc(50px / 2))
+  }
+
+  .after-img{
+    width: 170px;
+    height: 270px;
+  }
+  /* End Book collection section */
+
+  /* Show book */
+  .book-img {
+    padding: 22px 9px;
+  }
+  /* Show book */
+
+}
+@media (min-width: 1200px) {
+  /* Start Login logo section */
+  .login-logo, .register-logo {
+      text-align: left;
+  }
+  /*End Login logo section */
+
+  /* Start Search Portion */
+  .search-portion input[type='text']{
+    width: 250px;
+  }
+  .search-portion select{
+    width: 270px;
+  }
+  .search-portion form {
+    margin: 0 60px;
+  }
+  .search-portion form .all-input {
+    margin-right: 73px;
+  }
+  /* End Search Portion */
+
+  /* start Book Collection section */
+  .book-container {
+    width: 200px;
+    height: 300px;
+    margin: 30px 30px 45px 30px;
+  }
+
+  .book {
+    width: 200px;
+    height: 300px;
+  }
+
+  .book > :first-child {
+    width: 200px;
+    height: 300px;
+  }
+
+  .book::before {
+    height: calc(300px - 2 * 3px);
+    position: absolute;
+    transform: translateX(calc(200px - 50px / 2 - 3px)) rotateY(90deg) translateX(calc(50px / 2))
+  }
+
+  .after-img{
+    width: 200px;
+    height: 300px;
+  }
+  /* end Book Collection section */
+  /* Show book */
+  .book-img {
+    padding: 22px;
+  }
+  /* Show book */
+}

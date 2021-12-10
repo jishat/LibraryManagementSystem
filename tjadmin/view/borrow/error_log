@@ -1,0 +1,6 @@
+[10-Dec-2021 10:59:04 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/borrow/show.php on line 1
+[10-Dec-2021 10:59:04 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/borrow/show.php on line 1
+[10-Dec-2021 10:59:04 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Borrow\Borrow' not found in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/borrow/show.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/tjadmin/view/borrow/show.php on line 11

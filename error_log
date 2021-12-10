@@ -1,0 +1,92 @@
+[09-Dec-2021 17:20:59 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/index.php on line 2
+[09-Dec-2021 17:20:59 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/index.php on line 2
+[09-Dec-2021 17:20:59 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Login\Login' not found in /home/jishatco/librarymanagement.jishat.com/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/index.php on line 6
+[09-Dec-2021 17:22:49 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/app/Login/Login.php on line 3
+[09-Dec-2021 17:22:49 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/app/Login/Login.php on line 3
+[09-Dec-2021 17:22:49 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/element/head.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/index.php on line 7
+[09-Dec-2021 17:22:49 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/element/head.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/index.php on line 7
+[09-Dec-2021 17:22:49 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/element/script.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/index.php on line 69
+[09-Dec-2021 17:22:49 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/element/script.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/index.php on line 69
+[09-Dec-2021 17:43:21 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/app/Login/Login.php on line 3
+[09-Dec-2021 17:43:21 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/app/Login/Login.php on line 3
+[09-Dec-2021 17:43:21 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/element/head.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/index.php on line 7
+[09-Dec-2021 17:43:21 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/element/head.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/index.php on line 7
+[09-Dec-2021 17:43:21 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/element/script.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/index.php on line 69
+[09-Dec-2021 17:43:21 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/element/script.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/index.php on line 69
+[09-Dec-2021 18:26:08 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/element/head.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/index.php on line 7
+[09-Dec-2021 18:26:08 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/element/head.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/index.php on line 7
+[09-Dec-2021 18:26:08 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/element/script.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/index.php on line 69
+[09-Dec-2021 18:26:08 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/element/script.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/index.php on line 69
+[09-Dec-2021 18:30:15 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/app/Brand/Brand.php on line 3
+[09-Dec-2021 18:30:15 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/app/Brand/Brand.php on line 3
+[09-Dec-2021 18:30:15 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Database\database' not found in /home/jishatco/librarymanagement.jishat.com/app/Brand/Brand.php:11
+Stack trace:
+#0 /home/jishatco/librarymanagement.jishat.com/element/head.php(4): App\Brand\Brand->__construct()
+#1 /home/jishatco/librarymanagement.jishat.com/index.php(7): include_once('/home/jishatco/...')
+#2 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/app/Brand/Brand.php on line 11
+[09-Dec-2021 18:30:50 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Database\database' not found in /home/jishatco/librarymanagement.jishat.com/app/Brand/Brand.php:11
+Stack trace:
+#0 /home/jishatco/librarymanagement.jishat.com/element/head.php(4): App\Brand\Brand->__construct()
+#1 /home/jishatco/librarymanagement.jishat.com/index.php(7): include_once('/home/jishatco/...')
+#2 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/app/Brand/Brand.php on line 11
+[09-Dec-2021 18:32:00 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Database\database' not found in /home/jishatco/librarymanagement.jishat.com/app/Brand/Brand.php:11
+Stack trace:
+#0 /home/jishatco/librarymanagement.jishat.com/element/head.php(4): App\Brand\Brand->__construct()
+#1 /home/jishatco/librarymanagement.jishat.com/index.php(7): include_once('/home/jishatco/...')
+#2 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/app/Brand/Brand.php on line 11
+[09-Dec-2021 18:33:44 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Database\database' not found in /home/jishatco/librarymanagement.jishat.com/app/Brand/Brand.php:11
+Stack trace:
+#0 /home/jishatco/librarymanagement.jishat.com/element/head.php(4): App\Brand\Brand->__construct()
+#1 /home/jishatco/librarymanagement.jishat.com/index.php(7): include_once('/home/jishatco/...')
+#2 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/app/Brand/Brand.php on line 11
+[09-Dec-2021 18:33:47 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Database\database' not found in /home/jishatco/librarymanagement.jishat.com/app/Brand/Brand.php:11
+Stack trace:
+#0 /home/jishatco/librarymanagement.jishat.com/element/head.php(4): App\Brand\Brand->__construct()
+#1 /home/jishatco/librarymanagement.jishat.com/index.php(7): include_once('/home/jishatco/...')
+#2 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/app/Brand/Brand.php on line 11
+[09-Dec-2021 18:34:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'jishatco_jishatco'@'localhost' to database 'ciu' in /home/jishatco/librarymanagement.jishat.com/app/Database/Database.php:11
+Stack trace:
+#0 /home/jishatco/librarymanagement.jishat.com/app/Database/Database.php(11): PDO->__construct('mysql:host=loca...', 'jishatco_jishat...', 'Bk66X6RDdy)5[p')
+#1 /home/jishatco/librarymanagement.jishat.com/app/Brand/Brand.php(12): App\Database\Database->connection()
+#2 /home/jishatco/librarymanagement.jishat.com/element/head.php(4): App\Brand\Brand->__construct()
+#3 /home/jishatco/librarymanagement.jishat.com/index.php(7): include_once('/home/jishatco/...')
+#4 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/app/Database/Database.php on line 11
+[09-Dec-2021 18:37:37 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/register.php on line 1
+[09-Dec-2021 18:37:37 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/register.php on line 1
+[09-Dec-2021 18:37:37 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Login\Login' not found in /home/jishatco/librarymanagement.jishat.com/register.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/register.php on line 7
+[09-Dec-2021 18:38:04 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/app/Faculty/Faculty.php on line 3
+[09-Dec-2021 18:38:04 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/app/Faculty/Faculty.php on line 3
+[09-Dec-2021 19:04:46 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/book.php on line 1
+[09-Dec-2021 19:04:46 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/book.php on line 1
+[09-Dec-2021 19:04:46 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Book\Book' not found in /home/jishatco/librarymanagement.jishat.com/book.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/book.php on line 7
+[09-Dec-2021 19:05:27 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/element/header.php on line 1
+[09-Dec-2021 19:05:27 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/element/header.php on line 1
+[09-Dec-2021 19:07:48 UTC] PHP Warning:  include_once(/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php): failed to open stream: No such file or directory in /home/jishatco/librarymanagement.jishat.com/borrow.php on line 1
+[09-Dec-2021 19:07:48 UTC] PHP Warning:  include_once(): Failed opening '/home/jishatco/librarymanagement.jishat.com/ciu/bootstrap.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/jishatco/librarymanagement.jishat.com/borrow.php on line 1
+[09-Dec-2021 19:07:48 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Borrow\Borrow' not found in /home/jishatco/librarymanagement.jishat.com/borrow.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/jishatco/librarymanagement.jishat.com/borrow.php on line 8
+[09-Dec-2021 20:13:07 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/jishatco/librarymanagement.jishat.com/app/Login/Login.php on line 19
+[09-Dec-2021 20:13:07 UTC] PHP Warning:  Illegal string offset 'name' in /home/jishatco/librarymanagement.jishat.com/element/header.php on line 86
+[09-Dec-2021 20:13:07 UTC] PHP Warning:  Illegal string offset 'student_id' in /home/jishatco/librarymanagement.jishat.com/element/header.php on line 91
+[09-Dec-2021 20:13:07 UTC] PHP Warning:  Illegal string offset 'batch' in /home/jishatco/librarymanagement.jishat.com/element/header.php on line 95
+[09-Dec-2021 20:13:07 UTC] PHP Warning:  Illegal string offset 'faculty_name' in /home/jishatco/librarymanagement.jishat.com/element/header.php on line 99
+[09-Dec-2021 20:13:07 UTC] PHP Warning:  Illegal string offset 'gender' in /home/jishatco/librarymanagement.jishat.com/element/header.php on line 103
+[09-Dec-2021 20:13:07 UTC] PHP Warning:  Illegal string offset 'gender' in /home/jishatco/librarymanagement.jishat.com/element/header.php on line 103
+[09-Dec-2021 20:13:07 UTC] PHP Warning:  Illegal string offset 'email' in /home/jishatco/librarymanagement.jishat.com/element/header.php on line 107
